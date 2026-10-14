@@ -17,3 +17,5 @@ Snapshot: 14 October 2026. This is a visual development retrospective, not a gam
 `asset-manifest.json` records every copied image's original path, dimensions, animation frame count and SHA-256. All image copies are unchanged. The page scales previews with CSS; it does not modify import art, sprite sheets, catalogs or gameplay. Preview GIF/WebP files may be montage/composited studies; they are not import sprites. Creature display names are editorial labels, not verified live server monster IDs. The Judicator used in raid progression is an illustration, not a final angel-boss appearance.
 
 No new rights to Tibia source assets are implied. Do not distribute this development pack as a standalone unrestricted art library.
+
+Opening update: uses the user-supplied Fireworks Effect (Star/Circle) and Green/Orange/Red Confetti Effect GIFs. Tibia effect reference searched: https://tibia.fandom.com/wiki/Effects and https://tibia.fandom.com/wiki/Teleport_Effect. Direct retrieval was blocked; no new remote media was incorporated.

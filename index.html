@@ -1,6 +1,27 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vestara — A world taking shape</title><link rel="stylesheet" href="showcase.css"></head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vestara — A world taking shape</title><link rel="stylesheet" href="showcase.css"><link rel="preload" as="image" href="assets/Fireworks_Effect_(Star).gif"><link rel="preload" as="image" href="assets/Fireworks_Effect_(Circle).gif"><link rel="preload" as="image" href="assets/Green_Confetti_Effect.gif"><link rel="preload" as="image" href="assets/Orange_Confetti_Effect.gif"><link rel="preload" as="image" href="assets/Red_Confetti_Effect.gif"><link rel="preload" as="image" href="assets/arthur.webp"></head>
 <body>
+<div id="world-intro" class="world-intro" role="dialog" aria-modal="true" aria-labelledby="intro-title" hidden>
+ <div class="intro-fireworks" aria-hidden="true"></div><div class="intro-stars" aria-hidden="true"></div><div class="intro-vignette" aria-hidden="true"></div>
+ <button class="intro-skip" type="button">Skip introduction <span>↗</span></button>
+ <div class="intro-content">
+  <p class="eyebrow intro-kicker">BEYOND THE TEMPLE WALLS</p>
+  <h2 id="intro-title">VESTARA</h2><p class="intro-subtitle">An ancient world. A new awakening.</p>
+  <div class="intro-scene" aria-label="Activate the runes around the portal">
+   <div class="intro-gate" aria-hidden="true"><div class="gate-ring"></div><div class="gate-ring inner"></div><div class="gate-light"></div><img class="gate-hero pixel" src="assets/arthur.webp" alt=""></div>
+   <button class="intro-rune rune-one" type="button" aria-label="Activate the rune of light" aria-pressed="false">✧</button>
+   <button class="intro-rune rune-two" type="button" aria-label="Activate the rune of nature" aria-pressed="false">❧</button>
+   <button class="intro-rune rune-three" type="button" aria-label="Activate the rune of magic" aria-pressed="false">◇</button>
+  </div>
+  <p class="intro-message" aria-live="polite">The temple portal is stirring…</p>
+  <div class="intro-progress" aria-hidden="true"><span></span></div>
+  <p class="intro-hint">Touch the runes to awaken the gate · Escape to skip</p>
+ </div>
+</div>
+<script>
+// Keep the page usable without JavaScript and release it if the main script fails.
+(function(){try{if(window.localStorage.getItem('vestara:intro-seen')==='true')return;window.localStorage.setItem('vestara:intro-seen','true');}catch(error){/* Storage may be unavailable; keep the page usable. */}if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;var intro=document.getElementById('world-intro');intro.hidden=false;document.body.classList.add('intro-active');document.querySelectorAll('body > header, body > main, body > footer').forEach(function(el){el.inert=true;});window.vestaraIntroFallback=setTimeout(function(){intro.remove();document.body.classList.remove('intro-active');document.querySelectorAll('body > header, body > main, body > footer').forEach(function(el){el.inert=false;});},6500);})();
+</script>
 <header class="nav"><a class="brand" href="#">V<span>ESTARA</span><small>THE DEVELOPMENT CHRONICLE</small></a><nav aria-label="Showcase sections"><a href="#world">World</a><a href="#bestiary">Creatures</a><a href="#systems">Systems</a><a href="#studio">Art & UI</a><a href="#horizon">What’s next</a></nav></header>
 <main>
 <section class="hero">
@@ -56,4 +77,9 @@
 <footer><strong>VESTARA</strong><p>A development showcase assembled from existing project assets, repository documentation and design conversations. Artwork includes adaptations of Tibia assets; this showcase does not assert ownership of the underlying source art. No gameplay changes made.</p><a href="SOURCES.md">Sources & status notes</a><span>14 OCT 2026</span></footer>
 <dialog id="viewer"><button class="close" aria-label="Close preview">Close ×</button><img id="viewer-image" alt=""><p id="viewer-caption"></p></dialog>
 <script src="showcase.js"></script></body></html>
+
+
+
+
+
 

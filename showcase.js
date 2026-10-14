@@ -15,3 +15,87 @@ document.getElementById('enlarge-ui').addEventListener('click',()=>show('assets/
 document.getElementById('portal-toggle').addEventListener('click',()=>show('assets/portal.gif','Animated Pocket Portal','16 frames · 32×32 pixels each · 1.6-second oscillating loop · frame and foliage remain fixed.'));
 dialog.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
 document.querySelectorAll("[data-preview]").forEach(button=>button.addEventListener("click",()=>show(button.dataset.preview,button.querySelector("img").alt,button.dataset.caption)));
+
+(function initWorldIntro(){
+ const intro=document.getElementById('world-intro');
+ if(!intro || intro.hidden)return;
+ document.querySelectorAll('body > header, body > main, body > footer').forEach(el=>{el.inert=true;});
+ const skip=intro.querySelector('.intro-skip');
+ const message=intro.querySelector('.intro-message');
+ const previousFocus=document.activeElement;
+ const timers=[];
+ let closing=false;
+ function finish(){
+  if(closing)return;
+  closing=true;
+  timers.forEach(clearTimeout);
+  clearTimeout(window.vestaraIntroFallback);
+  intro.classList.add('departing');
+  document.removeEventListener('keydown',onKey);
+  setTimeout(()=>{
+   intro.remove();
+   document.body.classList.remove('intro-active');
+   document.querySelectorAll('body > header, body > main, body > footer').forEach(el=>{el.inert=false;});
+   if(previousFocus && previousFocus!==document.body)previousFocus.focus({preventScroll:true});
+   else document.querySelector('.brand').focus({preventScroll:true});
+  },700);
+ }
+ function onKey(event){
+  if(event.key==='Escape'){event.preventDefault();finish();}
+  if(event.key==='Tab'){
+   const buttons=[skip,...intro.querySelectorAll('.intro-rune')];
+   const first=buttons[0],last=buttons[buttons.length-1];
+   if(event.shiftKey && document.activeElement===first){event.preventDefault();last.focus();}
+   else if(!event.shiftKey && document.activeElement===last){event.preventDefault();first.focus();}
+  }
+ }
+ skip.addEventListener('click',finish);
+ document.addEventListener('keydown',onKey);
+ skip.focus({preventScroll:true});
+ intro.querySelectorAll('.intro-rune').forEach(rune=>rune.addEventListener('click',()=>{
+  rune.setAttribute('aria-pressed','true');
+  const burst=document.createElement('img');
+  burst.className='rune-cast pixel';
+  burst.src='assets/Fireworks_Effect_(Star).gif';
+  burst.alt='';
+  burst.setAttribute('aria-hidden','true');
+  rune.appendChild(burst);
+  timers.push(setTimeout(()=>burst.remove(),900));
+  const count=intro.querySelectorAll('.intro-rune[aria-pressed="true"]').length;
+  message.textContent=count===3?'The gate awakens. Welcome to Vestara.':`${count} of 3 runes awakened…`;
+  if(count===3)intro.classList.add('awakened');
+ }));
+ timers.push(setTimeout(()=>{if(!intro.querySelector('.intro-rune[aria-pressed="true"]'))message.textContent='Moonsilver light spills beyond the gate…';},1800));
+ timers.push(setTimeout(()=>{intro.classList.add('awakened');message.textContent='Your adventure begins.';},3700));
+ // Mount each looping GIF once, avoiding timed reloads and DOM churn.
+ const fireworks=intro.querySelector('.intro-fireworks');
+ const effects=[
+  [14,22,'Fireworks_Effect_(Star).gif'],
+  [84,26,'Fireworks_Effect_(Circle).gif'],
+  [24,74,'Green_Confetti_Effect.gif'],
+  [78,78,'Fireworks_Effect_(Star).gif'],
+  [10,52,'Orange_Confetti_Effect.gif'],
+  [90,56,'Red_Confetti_Effect.gif'],
+  [50,14,'Fireworks_Effect_(Circle).gif']
+ ];
+ const fragment=document.createDocumentFragment();
+ effects.forEach(([x,y,asset])=>{
+  const effect=document.createElement('img');
+  effect.className='screen-firework pixel';
+  effect.alt='';
+  effect.decoding='async';
+  effect.src=`assets/${asset}`;
+  effect.style.left=`${x}%`;
+  effect.style.top=`${y}%`;
+  fragment.appendChild(effect);
+ });
+ fireworks.appendChild(fragment);
+ timers.push(setTimeout(finish,4800));
+ const motionPreference=window.matchMedia('(prefers-reduced-motion: reduce)');
+ motionPreference.addEventListener('change',function onMotionChange(event){if(event.matches){finish();motionPreference.removeEventListener('change',onMotionChange);}});
+})();
+
+
+
+
+
