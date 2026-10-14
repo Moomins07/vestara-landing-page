@@ -1,0 +1,9 @@
+{
+  "brokenImages": [],
+  "errors": [],
+  "mobileOverflow": false,
+  "creatureSelectionAndMotion": "passed",
+  "spoilerToggle": "passed",
+  "dialogs": "passed",
+  "note": "Unassigned image in closed preview dialog excluded; both dialog images decoded during interactive checks."
+}

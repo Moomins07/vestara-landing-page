@@ -1,0 +1,332 @@
+[
+  {
+    "file": "assets/demon.png",
+    "source": "art-output/dungeon-ui/assets/monsters/demon.png",
+    "dimensions": [
+      64,
+      64
+    ],
+    "frames": 1,
+    "sha256": "711fbf554c65124f42a167a489cd1189977596e66a8db02d19433f7079868ed9",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/dragon.png",
+    "source": "art-output/dungeon-ui/assets/monsters/dragon.png",
+    "dimensions": [
+      64,
+      64
+    ],
+    "frames": 1,
+    "sha256": "0149ac32cc8e4ba5573e8f7cb4addb28a87e6f5efd8c363735b232a0cd4608d5",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/judicator.png",
+    "source": "art-output/dungeon-ui/assets/monsters/judicator.png",
+    "dimensions": [
+      64,
+      64
+    ],
+    "frames": 1,
+    "sha256": "c16aee4b836a7f269da364c084565630190f3eb1707f0c8fa20ba8b3dbe52992",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/dawncoil.png",
+    "source": "art-output/dungeon-ui/assets/monsters/dawncoil.png",
+    "dimensions": [
+      64,
+      64
+    ],
+    "frames": 1,
+    "sha256": "8a983fd20be9136f2f334c188f5d0189fb5af841bb2b07ed1ff514db550cc7d0",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/flame.png",
+    "source": "art-output/dungeon-ui/assets/monsters/flame.png",
+    "dimensions": [
+      64,
+      64
+    ],
+    "frames": 1,
+    "sha256": "0161931bc10c5b9a7523ffbad233180d1b37ccbbe5e6ca267a1bbbe06cbe3f44",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/orc.png",
+    "source": "art-output/dungeon-ui/assets/monsters/orc.png",
+    "dimensions": [
+      32,
+      32
+    ],
+    "frames": 1,
+    "sha256": "76f4b7ad63074cf4f00d841f323bcd204ab8bd55c60996238c402eb57681dc92",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/ferumbras.png",
+    "source": "art-output/dungeon-ui/assets/monsters/ferumbras.png",
+    "dimensions": [
+      64,
+      64
+    ],
+    "frames": 1,
+    "sha256": "53e4e9a5a637d2e400fead597cff0afe73d8fbe29d1e9ef715ef40bd8d129d56",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/leaf-tl.png",
+    "source": "art-output/dungeon-ui/assets/ornaments/leaf-tl.png",
+    "dimensions": [
+      96,
+      80
+    ],
+    "frames": 1,
+    "sha256": "9982543b0b86b20ae0b9c38450eb66f2cc5b9865d7983f3d8fa39975f4fc0d2e",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/leaf-tr.png",
+    "source": "art-output/dungeon-ui/assets/ornaments/leaf-tr.png",
+    "dimensions": [
+      96,
+      80
+    ],
+    "frames": 1,
+    "sha256": "c9e731d5139893cde8dd5b1b5bfd3ae0a0d0954338c0310d0e2e2a8ecaf01bce",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/demon-motion.webp",
+    "source": "art-output/angelic-demon/walking-preview.webp",
+    "dimensions": [
+      1024,
+      256
+    ],
+    "frames": 8,
+    "sha256": "472f9c66062a3cc1483a57fc5438e8f672ed8e8bb6f0b0b514224ebf15fc7f55",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/dragon-motion.webp",
+    "source": "art-output/ivory-dragon-gold/movement-preview.webp",
+    "dimensions": [
+      1024,
+      256
+    ],
+    "frames": 8,
+    "sha256": "414ca85c509b9b9f421930624d2ac652482cdfce62fc497279906192ad280f74",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/judicator-motion.webp",
+    "source": "art-output/moonsilver-judicator/movement-preview.webp",
+    "dimensions": [
+      1024,
+      256
+    ],
+    "frames": 2,
+    "sha256": "78543bf56902584b0532a9939e9f2fe56e627daa06232ee74d2168ced3e65440",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/dawncoil-motion.webp",
+    "source": "art-output/dawncoil/movement-preview.webp",
+    "dimensions": [
+      1024,
+      256
+    ],
+    "frames": 2,
+    "sha256": "58b6cc14c263c785f89b8a08e4be044ee00e46c56f840df47c88fc182b9e8eba",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/flame-motion.webp",
+    "source": "art-output/holy-fire-elemental/movement-preview.webp",
+    "dimensions": [
+      1024,
+      256
+    ],
+    "frames": 8,
+    "sha256": "c6798be1bd4bfddd8990342acd638dc18927dd08b03e18e06eaa304388e3bd01",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/holy.webp",
+    "source": "art-output/moonsilver-spell-effects/moonsilver-holyarea/animation.webp",
+    "dimensions": [
+      64,
+      64
+    ],
+    "frames": 25,
+    "sha256": "a59fd83d906c44bb89f64112b35dcc9b191812f861b7d576c29ab04f6bb76cc9",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/energy.webp",
+    "source": "art-output/moonsilver-spell-effects/moonsilver-energyarea/animation.webp",
+    "dimensions": [
+      32,
+      32
+    ],
+    "frames": 11,
+    "sha256": "c3b4f542cca997d14f78287e4a6ac450c782a899dbc6a27898e1f5f3de908411",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/corrupted.webp",
+    "source": "art-output/corrupted-holy-effects/corrupted-holyarea/animation.webp",
+    "dimensions": [
+      64,
+      64
+    ],
+    "frames": 25,
+    "sha256": "022160b92cb9127815e62f46492fe7e339ff764c9fb92667aac0d2a54c79d619",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/corrupted-hit.webp",
+    "source": "art-output/corrupted-holy-effects/corrupted-holydamage/animation.webp",
+    "dimensions": [
+      32,
+      64
+    ],
+    "frames": 7,
+    "sha256": "90e430cc2d67c43d4d02d40e18913a9123416c82629bcb7272e966eb58ac0c51",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/arthur.webp",
+    "source": "art-output/one-armed-warrior/import-pack/south-walk.webp",
+    "dimensions": [
+      64,
+      64
+    ],
+    "frames": 8,
+    "sha256": "898605c72c5fb1387516be05411bcc49c65179204d97c4f38cb58b6569a32c14",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/portal.png",
+    "source": "art-output/pocket-portal/pocket-portal.png",
+    "dimensions": [
+      32,
+      32
+    ],
+    "frames": 1,
+    "sha256": "32e3ab7bc9cd515d1e198da7be14920c8d3b57ef5dacefafc68fecf0f53158a5",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/portal.gif",
+    "source": "art-output/pocket-portal/animated/preview.gif",
+    "dimensions": [
+      224,
+      268
+    ],
+    "frames": 16,
+    "sha256": "6892550bca3dfcaa084044524aadeb3876134e26f322b14ec6831f813400dd8d",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/xp.png",
+    "source": "art-output/global-boost-items-32x32/extra-xp.png",
+    "dimensions": [
+      32,
+      32
+    ],
+    "frames": 1,
+    "sha256": "c2d7c724623aa41277c7c746fa63accd160d258f6d4b9d6fae6b5dee44ff4dcf",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/loot.png",
+    "source": "art-output/global-boost-items-32x32/extra-loot.png",
+    "dimensions": [
+      32,
+      32
+    ],
+    "frames": 1,
+    "sha256": "3e90591d27e0876454115a82eb8d82e6bf7fbd4ee3ef9b90667f60c9b58bd4c5",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/elite.png",
+    "source": "art-output/global-boost-items-32x32/extra-elite-spawns.png",
+    "dimensions": [
+      32,
+      32
+    ],
+    "frames": 1,
+    "sha256": "d7a39b967e70823dac73c9e79851ba5e7e6f6c7aeab18007b345e574eb3914fe",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/xp-status.png",
+    "source": "art-output/global-buff-status-icons-verdant/global-xp-active.png",
+    "dimensions": [
+      32,
+      32
+    ],
+    "frames": 1,
+    "sha256": "74d22c1ffa1d2b0c044771fc3d995722586799a2bc39030fc7a797b437189fb2",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/loot-status.png",
+    "source": "art-output/global-buff-status-icons-verdant/global-loot-active.png",
+    "dimensions": [
+      32,
+      32
+    ],
+    "frames": 1,
+    "sha256": "24d8065a66b4ae1ec86275d032ae70147dcd94645f0cccd3c361e52c208f3bc3",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/elite-status.png",
+    "source": "art-output/global-buff-status-icons-verdant/global-elite-active.png",
+    "dimensions": [
+      32,
+      32
+    ],
+    "frames": 1,
+    "sha256": "fa0ef3037f08e0609bb368e69b4e3aca5e9f2200bf217d6f5ff3c97576b3f959",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/bag.png",
+    "source": "art-output/moonsilver-loot-bag/moonsilver-loot-bag-32x32.png",
+    "dimensions": [
+      32,
+      32
+    ],
+    "frames": 1,
+    "sha256": "552f41c6cfbe4653fbd239a4683d605e07a1b127dbc74d72e5470717b72af080",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/dungeon.png",
+    "source": "art-output/dungeon-ui/showcase-capture.png",
+    "dimensions": [
+      1360,
+      900
+    ],
+    "frames": 1,
+    "sha256": "ea6c1d30494661d67498277854b9a214af1b03a06228908e3132fc405f39844f",
+    "operation": "unchanged copy"
+  },
+  {
+    "file": "assets/sets.png",
+    "source": "art-output/set-concepts/visual-review-01.png",
+    "dimensions": [
+      1400,
+      1370
+    ],
+    "frames": 1,
+    "sha256": "5132f98c85414bc0eea463db5869c84c31b298990f6c39d24e6938e961ed9485",
+    "operation": "unchanged copy"
+  }
+]
