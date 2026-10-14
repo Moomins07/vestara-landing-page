@@ -14,3 +14,4 @@ function show(src,alt,caption){document.getElementById('viewer-image').src=src;d
 document.getElementById('enlarge-ui').addEventListener('click',()=>show('assets/dungeon.png','Dungeon interface prototype','Existing browser prototype. Requirements, rewards and queue state are illustrative; this is not a live game session.'));
 document.getElementById('portal-toggle').addEventListener('click',()=>show('assets/portal.gif','Animated Pocket Portal','16 frames · 32×32 pixels each · 1.6-second oscillating loop · frame and foliage remain fixed.'));
 dialog.querySelector('.close').addEventListener('click',()=>dialog.close());dialog.addEventListener('click',e=>{if(e.target===dialog)dialog.close()});
+document.querySelectorAll("[data-preview]").forEach(button=>button.addEventListener("click",()=>show(button.dataset.preview,button.querySelector("img").alt,button.dataset.caption)));
